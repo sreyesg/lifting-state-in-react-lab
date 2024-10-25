@@ -28,8 +28,12 @@ const App = () => {
       <h1>Burger Stacker</h1>
       <section>
       {/* List & Stack components */}
+      <div className="ingredients">
       <IngredientList ingredients={availableIngredients}/>
+      </div>
+      <div className="burgerStack">
       <BurgerStack/>
+      </div>
       </section>
     </main>
   );
