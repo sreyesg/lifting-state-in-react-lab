@@ -1,6 +1,18 @@
 // src/components/IngredientList.jsx
 const IngredientList = (props) => {
-    return <ul>// map through props.ingredients</ul>;
+    console.log(props.ingredients, 'I AM PROPS')
+    
+    return (
+        <ul>
+            {
+            props.ingredients.map((ingredient,idx) => {
+                return(
+                    <li key={idx}>{ingredient.name}</li>
+                )
+            })
+            }
+        </ul>
+    );
   };
   
   export default IngredientList;
