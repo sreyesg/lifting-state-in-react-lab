@@ -22,10 +22,6 @@ export const availableIngredients = [
   { name: 'Swiss Cheese', color: '#F1E1A8' },
 ];
 
-
-
-
-
 const App = () => {
 
   const [stack, setStack] = useState([])
@@ -33,6 +29,7 @@ const App = () => {
 
   const addToBurger = (newIngredient) => {
     console.log(newIngredient, 'FROM ADD TO BURGER')
+    setStack([...stack, newIngredient])
   }
 
   return (
