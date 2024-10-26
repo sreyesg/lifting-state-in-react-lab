@@ -44,7 +44,7 @@ const App = () => {
     <main>
       <h1>Burger Stacker</h1>
       <section>
-      {/* List & Stack components */}
+      
       <div className="ingredients">
       <IngredientList 
         ingredients={availableIngredients}
