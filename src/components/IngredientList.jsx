@@ -1,9 +1,7 @@
 // src/components/IngredientList.jsx
 const IngredientList = (props) => {
-    console.log(props.ingredients, 'I AM PROPS')
     const handleAddToBurger = (ingredient) => {
-        console.log('FROM HANDLE ADD BURGER')
-        console.log(ingredient)
+        
         props.addToBurger(ingredient)
 
     }

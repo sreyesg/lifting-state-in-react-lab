@@ -45,7 +45,7 @@ const App = () => {
       />
       </div>
       <div className="burgerStack">
-      <BurgerStack/>
+      <BurgerStack stack={stack}/>
       </div>
       </section>
     </main>
