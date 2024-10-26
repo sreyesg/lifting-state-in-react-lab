@@ -33,10 +33,8 @@ const App = () => {
   }
 
   const removeFromBurger = (ingredient) => {
-    const ingredientToRemove = ingredient.name
-    console.log(ingredientToRemove, 'NAME TO REMOVE')
-    const newStack = stack.filter(ele => ele.name !== ingredientToRemove)
-    console.log(newStack,'THE NEW STACK')
+  
+    const newStack = stack.filter(ele => ele.name !== ingredient.name)
     setStack(newStack)
   }
 
@@ -53,6 +51,7 @@ const App = () => {
       />
       </div>
       <div className="burgerStack">
+        <p>{stack.length === 0 ? 'Select from left colunm to create burger': ''}</p>
       <BurgerStack 
         stack={stack}
         removeFromBurger={removeFromBurger}
