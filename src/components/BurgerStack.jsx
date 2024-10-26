@@ -1,6 +1,9 @@
 // `src/components/BurgerStack.jsx`
 const BurgerStack = (props) => {
     // console.log(props.stack, 'FROM THE STACK')
+    const handleRemoveFromBurger = (ingredient) => {
+        props.removeFromBurger(ingredient)
+    }
     return (
         <ul>
             {
@@ -12,7 +15,7 @@ const BurgerStack = (props) => {
                     key={idx}
                     >
                         {ingredient.name}
-                        <button>X</button>
+                        <button onClick={()=> handleRemoveFromBurger(ingredient)}>X</button>
                     </li>
                 )
 
